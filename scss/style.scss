@@ -2,6 +2,7 @@
     max-width: 1202px;
     margin: 0 auto;
     padding: 0 15px;
+    overflow:hidden;
 }
 .main {
     padding-top: 60px;
@@ -46,6 +47,7 @@
         height: 238px;
         width: 1px;
         background-color: #D8D8D8;
+        margin: 0 25px;
     }
 }
 .nav {  
@@ -122,6 +124,7 @@
             grid-template-columns: 0.7fr 1fr;
             row-gap: 60px;
             margin-top: 50px;
+            align-items: center;
         }
 }
 .title {
@@ -191,10 +194,6 @@
 }
 
 .about {
-
-	&_connection {
-
-    }
     &__title {
         margin-bottom: 34px;
     }
@@ -245,6 +244,44 @@
             margin: 0;
         }
     }
+}
+
+// анимация блоков.
+.item-anim-left {
+    transform: translate(-60%, 0);
+    opacity: 0;
+    transition: all 0.8s ease 0.2s;
+}
+.item-anim-left.item-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.item-anim-right {
+    transform: translate(60%, 0);
+    opacity: 0;
+    transition: all 0.8s ease 0.2s;
+}
+.item-anim-right.item-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.item-anim-top {
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 0.6s ease 0.2s;
+}
+.item-anim-top.item-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.item-anim-scale {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.item-anim-scale.item-show {
+    transform: scale(1);
+    opacity: 1;
 }
 
 

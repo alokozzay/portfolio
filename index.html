@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/null.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,33 +17,33 @@
         <div class="container">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">WORK</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">PROJECT</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">ABOUT</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">WORK</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">PROJECT</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">ABOUT</a></li>
                 </ul>
             </nav>
             <div class="flex-box">
-                <h1 class="main__title">Hello <br> I’m Nikita Kornev</h1>
-                <div class="main__partition"></div>
+                <h1 class="main__title item-anim-left">Hello <br> I’m Nikita Kornev</h1>
+                <div class="main__partition item-anim-scale"></div>
                 <div class="main__info">
-                    <p class="main__subtitle">
+                    <p class="main__subtitle item-anim-right">
                         I am a front-end developer, you can read my stack in the about me tab. I'm interested in bringing layouts to life, as well as implementing worker functions in JavaScipt.
                         I devote all my free time to programming.
                     </p>
-                    <p class="main__data">25.02.2020</p>
+                    <p class="main__data item-anim-right">25.02.2020</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="work">
+    <section class="work" id="work">
         <div class="container">
-            <p class="work__title title">Work</p> 
+            <p class="work__title title item-anim-top">Work</p> 
             <div class="grid">
-                <div class="grid-left">
+                <div class="grid-left item-anim-left">
                     <p class="work__place">Freelance</p>
                     <p class="work__date">September • 2021</p>
                 </div>
-                <div class="grid-right">
+                <div class="grid-right item-anim-right">
                     <p class="work__description">Order for the development of a crypto exchange.</p>
                     <div class="work__stack-list">
                         <p class="work__stack-item">HTML</p>
@@ -52,11 +53,11 @@
                         <p class="work__stack-item">Node JS</p>
                     </div>
                 </div>
-                <div class="grid-left">
+                <div class="grid-left item-anim-left">
                     <p class="work__place">For myself</p>
-                    <p class="work__date">DECEMBER • 2021</p>
+                    <p class="work__date">December • 2021</p>
                 </div>
-                <div class="grid-right">
+                <div class="grid-right item-anim-right">
                     <p class="work__description">Development of a weather forecast website for all cities.</p>
                     <div class="work__stack-list">
                         <p class="work__stack-item">Node JS</p>
@@ -67,11 +68,11 @@
                         <p class="work__stack-item">CSS</p>
                     </div>
                 </div>
-                <div class="grid-left">
+                <div class="grid-left item-anim-left">
                     <p class="work__place">For myself</p>
                     <p class="work__date">January • 2022</p>
                 </div>
-                <div class="grid-right">
+                <div class="grid-right item-anim-right">
                     <p class="work__description">Сreation of different sites with different functionality for portfolio.</p>
                     <div class="work__stack-list">
                         <p class="work__stack-item">HTML</p>
@@ -83,63 +84,76 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
-            <p class="projects__title title">Projects</p>
-                <div class="projects__item flex-box"><div class="projects__img">
+            <p class="projects__title title item-anim-top">Projects</p>
+            <div class="projects__item flex-box ">
+                    <div class="projects__img item-anim-scale">
                     <img src="./img/bg-1.jpg" alt="img" class="projects__item-img">
                 </div>
                 <div class="projects__item-info projects__item-info_right">
-                    <p class="projects__item-title">English course</p>
-                    <p class="projects__item-subtitle">
+                    <p class="projects__item-title item-anim-scale">English course</p>
+                    <p class="projects__item-subtitle item-anim-scale">
                         The site is designed to sell English courses. tightened synthetics and BEM methodology. beautiful animations and neat adaptation.
                         HTML, SCSS, Grid Box, JavaScript were used.
                     </p>
-                    <a href="https://alokozzay.github.io/language/" class="projects__item-link">Link Repository</a>
+                    <a href="https://alokozzay.github.io/language/" class="projects__item-link item-anim-top">Link Repository</a>
                 </div>
             </div>
-            <div class="projects__item flex-box">
+            <div class="projects__item flex-box flex-box-reverse">
                 <div class="projects__item-info projects__item-info_left">
-                    <p class="projects__item-title">Weather</p>
-                    <p class="projects__item-subtitle">
+                    <p class="projects__item-title item-anim-scale">Weather</p>
+                    <p class="projects__item-subtitle item-anim-scale">
                         For this project, I decided to take it seriously, first I found a suitable API. then, having learned the elementary backend, I began to implement. used HTML, CSS, JavaScript, Node JS, Express, Backend.
                     </p>
-                    <a href="https://github.com/alokozzay/weather" class="projects__item-link">Link Repository</a>
+                    <a href="https://github.com/alokozzay/weather" class="projects__item-link item-anim-top">Link Repository</a>
                 </div>
-                <div class="projects__img">
+                <div class="projects__img item-anim-scale">
                     <img src="./img/bg-2.jpg" alt="img" class="projects__item-img">        
                 </div>
             </div>
             <div class="projects__item flex-box">
                 <div class="projects__img">
-                    <img src="./img/bg-3.jpg" alt="img" class="projects__item-img">
+                    <img src="./img/bg-5.jpg" alt="img" class="projects__item-img item-anim-scale">
                 </div>
                 <div class="projects__item-info projects__item-info_right">
-                    <p class="projects__item-title">ExCryptor</p>
-                    <p class="projects__item-subtitle">
+                    <p class="projects__item-title item-anim-scale">Portfolio</p>
+                    <p class="projects__item-subtitle item-anim-scale">
+                        This is the site you are currently on. was created in 2-3 days, everything needed was used so that users could sit and please their eyes :)
+                    </p>
+                    <a href="https://alokozzay.github.io/portfolio/" class="projects__item-link item-anim-top">Link Repository</a>
+                </div>
+            </div>
+            <div class="projects__item flex-box flex-box-reverse">
+                <div class="projects__item-info "> 
+                    <p class="projects__item-title item-anim-scale">ExCryptor</p>
+                    <p class="projects__item-subtitle item-anim-scale">
                         My first freelance job was the creation of a multi-page site for the exchange of cryptocurrencies. HTML, SCSS, JavaScript, GULP + backend is used.
                     </p>
-                    <a href="https://github.com/alokozzay/excryptor" class="projects__item-link">Link Repository</a>
+                    <a href="https://github.com/alokozzay/excryptor" class="projects__item-link item-anim-top">Link Repository</a>
+                </div>
+                <div class="projects__img item-anim-scale">
+                    <img src="./img/bg-4.jpg" alt="img" class="projects__item-img">        
                 </div>
             </div>
             <div class="projects__item flex-box">
-                <div class="projects__item-info projects__item-info_left"> 
-                    <p class="projects__item-title">NFT Project</p>
-                    <p class="projects__item-subtitle">
+                <div class="projects__img">
+                    <img src="./img/bg-3.jpg" alt="img" class="projects__item-img item-anim-scale">
+                </div>
+                <div class="projects__item-info projects__item-info_right">
+                    <p class="projects__item-title item-anim-scale">NFT Project</p>
+                    <p class="projects__item-subtitle item-anim-scale">
                         an ordinary landing page with an unusual design for selling NFT images. Adaptation is not provided by the layout, so it is not. used HTML, SCSS, JavaScript.
                     </p>
-                    <a href="https://alokozzay.github.io/nft/" class="projects__item-link">Link Repository</a>
-                </div>
-                <div class="projects__img">
-                    <img src="./img/bg-4.jpg" alt="img" class="projects__item-img">        
+                    <a href="https://alokozzay.github.io/nft/" class="projects__item-link item-anim-top">Link Repository</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
-            <p class="about__title title">About</p>
+            <p class="about__title title item-anim-top">About</p>
             <p class="about__subtitle about__text">
                 I'm Nikita Kornev - Fronted Developer. I live in Ukraine and my year of birth is 2003. <br> <br>
 
@@ -187,5 +201,7 @@
             </div>
         </div>
     </section>
+    <script src="./js/scroll-anim.js"></script>
+    <script src="./js/scroll-menu.js"></script>
 </body>
 </html>
